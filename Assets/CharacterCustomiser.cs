@@ -5,9 +5,9 @@ using UnityEngine.Sprites;
 
 public class CharacterCustomiser : MonoBehaviour
 {
-    public Texture2D[] Faces;
-    public Material[] PlayerMats;
-    public GameObject PlayerBody;
+    public Texture2D[] faces;
+    public Material[] playerMats;
+    public GameObject playerBody;
 
     // Start is called before the first frame update
     void Start()
@@ -21,8 +21,8 @@ public class CharacterCustomiser : MonoBehaviour
         
     }
 
-    public void ChangeFace()
+    public void ChangeFace(int faceId)
     {
-        PlayerMats[1].SetTexture("_DecalTex", Faces[Random.Range(0,Faces.Length)]);
+        playerMats[1].SetTexture("_DecalTex", faces[faceId]);
     }
 }
