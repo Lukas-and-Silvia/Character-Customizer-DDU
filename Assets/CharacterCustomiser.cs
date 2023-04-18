@@ -5,20 +5,39 @@ using UnityEngine.Sprites;
 
 public class CharacterCustomiser : MonoBehaviour
 {
-    public Texture2D[] faces;
     public Material[] playerMats;
-    public GameObject playerBody;
+    public GameObject[] hair;
+    public Texture2D[] faces;
 
-    // Start is called before the first frame update
-    void Start()
+    int PrimaryHair = 0;
+    int SecondaryHair = 0;
+
+    public void ChangePrimaryHair(int hairId)
     {
-        
+        for (int i = 0; i < hair.Length; i++)
+        {
+            if (i == SecondaryHair)
+            {
+                continue;
+            }
+            hair[i].SetActive(false);
+        }
+        hair[hairId].SetActive(true);
+        PrimaryHair = hairId;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangeSecondaryHair(int hairId)
     {
-        
+        for (int i = 0; i < hair.Length; i++)
+        {
+            if (i == PrimaryHair)
+            {
+                continue;
+            }
+            hair[i].SetActive(false);
+        }
+        hair[hairId].SetActive(true);
+        SecondaryHair = hairId;
     }
 
     public void ChangeFace(int faceId)
