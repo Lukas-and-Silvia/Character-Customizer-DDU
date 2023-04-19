@@ -17,6 +17,7 @@ public class AnimationStateController : MonoBehaviour
     {
         bool IsWalking = animator.GetBool("IsWalking");
         bool wPressed = Input.GetKey(KeyCode.W);
+
         if (!IsWalking && wPressed)
         {
             animator.SetBool("IsWalking", true);
