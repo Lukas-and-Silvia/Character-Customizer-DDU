@@ -12,6 +12,12 @@ public class CharacterCustomiser : MonoBehaviour
     int PrimaryHair = 0;
     int SecondaryHair = 0;
 
+    private void Start()
+    {
+        playerMats[0].color = Color.black;
+        playerMats[1].SetTexture("_DecalTex", faces[0]);
+    }
+
     public void ChangePrimaryHair(int hairId)
     {
         for (int i = 0; i < hair.Length; i++)
@@ -38,6 +44,11 @@ public class CharacterCustomiser : MonoBehaviour
         }
         hair[hairId].SetActive(true);
         SecondaryHair = hairId;
+    }
+
+    public void ChangeHairColor(Color color)
+    {
+        playerMats[0].color = color;
     }
 
     public void ChangeFace(int faceId)
