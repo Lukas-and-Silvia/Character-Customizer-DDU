@@ -372,6 +372,56 @@ ModelImporter:
       position: {x: -0, y: 0.000023106188, z: 0.0074712574}
       rotation: {x: 0.7071068, y: -0.00000008429372, z: -0.0000000842937, w: 0.7071067}
       scale: {x: 1, y: 1, z: 1}
+    - name: Leg_L
+      parentName: Hips
+      position: {x: -0.00079441926, y: -0.00024732828, z: 1.8940431e-10}
+      rotation: {x: 0.028913438, y: 0.007658958, z: 0.9994793, w: 0.012101824}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Leg_L.001
+      parentName: Leg_L
+      position: {x: -7.421477e-12, y: 0.0031782608, z: 2.3283064e-12}
+      rotation: {x: -0.007855015, y: -0.0000758399, z: 0.002827555, w: 0.9999652}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_L
+      parentName: Leg_L.001
+      position: {x: 6.3882906e-11, y: 0.003344952, z: 8.731149e-13}
+      rotation: {x: 0.5158895, y: -0.000044581437, z: -0.024710787, w: 0.8562986}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Toes_L
+      parentName: Foot_L
+      position: {x: -9.3132255e-12, y: 0.0011512496, z: -7.916242e-11}
+      rotation: {x: 0.19278383, y: -0.0000000063334555, z: -0.01340303, w: 0.98114973}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Toes_L_end
+      parentName: Toes_L
+      position: {x: -0, y: 0.0005731343, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Leg_R
+      parentName: Hips
+      position: {x: 0.00079441926, y: -0.00024732828, z: -1.8940431e-10}
+      rotation: {x: -0.02891318, y: 0.007658957, z: 0.99947935, w: -0.012101828}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Leg_R.001
+      parentName: Leg_R
+      position: {x: -1.132139e-10, y: 0.0031782605, z: 0}
+      rotation: {x: -0.007855015, y: 0.00007585666, z: -0.002827552, w: 0.9999652}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Foot_R
+      parentName: Leg_R.001
+      position: {x: 2.1100276e-11, y: 0.0033449524, z: 0}
+      rotation: {x: 0.51588964, y: 0.00004458233, z: 0.024710804, w: 0.85629857}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Toes_R
+      parentName: Foot_R
+      position: {x: 5.937181e-11, y: 0.0011512495, z: 5.5879353e-11}
+      rotation: {x: 0.19278385, y: 0.000000001311065, z: 0.013403022, w: 0.98114973}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Toes_R_end
+      parentName: Toes_R
+      position: {x: -0, y: 0.0005731343, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Spine
       parentName: Hips
       position: {x: -0, y: 0.0015657186, z: 0}
@@ -470,7 +520,7 @@ ModelImporter:
     - name: Forearm_R
       parentName: Bicep_R
       position: {x: -1.9828802e-10, y: 0.0025409437, z: -1.3969838e-10}
-      rotation: {x: 0.03787491, y: -0.0008488408, z: 0.0052989624, w: 0.99926805}
+      rotation: {x: 0.037874915, y: -0.00084884086, z: 0.005298963, w: 0.9992681}
       scale: {x: 1, y: 0.9999999, z: 1}
     - name: Hand_R
       parentName: Forearm_R
@@ -500,7 +550,7 @@ ModelImporter:
     - name: Thumb_R
       parentName: Hand_R
       position: {x: 0.00017390982, y: 0.00021856693, z: 0.00023147617}
-      rotation: {x: 0.36568144, y: -0.032084376, z: -0.069149405, w: 0.9276131}
+      rotation: {x: 0.36568144, y: -0.03208438, z: -0.069149405, w: 0.92761314}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Thumb_R.001
       parentName: Thumb_R
@@ -517,57 +567,12 @@ ModelImporter:
       position: {x: -0, y: 0.00019844275, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Leg_L
-      parentName: Hips
-      position: {x: -0.00079441926, y: -0.00024732828, z: 1.8940431e-10}
-      rotation: {x: 0.028913438, y: 0.007658958, z: 0.9994793, w: 0.012101824}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: Leg_L.001
-      parentName: Leg_L
-      position: {x: -7.421477e-12, y: 0.0031782608, z: 2.3283064e-12}
-      rotation: {x: -0.007855015, y: -0.0000758399, z: 0.002827555, w: 0.9999652}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Foot_L
-      parentName: Leg_L.001
-      position: {x: 6.3882906e-11, y: 0.003344952, z: 8.731149e-13}
-      rotation: {x: 0.5158895, y: -0.000044581437, z: -0.024710787, w: 0.8562986}
-      scale: {x: 1, y: 0.99999994, z: 0.9999999}
-    - name: Toes_L
-      parentName: Foot_L
-      position: {x: -9.3132255e-12, y: 0.0011512496, z: -7.916242e-11}
-      rotation: {x: 0.19278383, y: -0.0000000063334555, z: -0.01340303, w: 0.98114973}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Toes_L_end
-      parentName: Toes_L
-      position: {x: -0, y: 0.0005731343, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Leg_R
-      parentName: Hips
-      position: {x: 0.00079441926, y: -0.00024732828, z: -1.8940431e-10}
-      rotation: {x: -0.02891318, y: 0.007658957, z: 0.99947935, w: -0.012101828}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
-    - name: Leg_R.001
-      parentName: Leg_R
-      position: {x: -1.132139e-10, y: 0.0031782605, z: 0}
-      rotation: {x: -0.007855015, y: 0.00007585666, z: -0.002827552, w: 0.9999652}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
-    - name: Foot_R
-      parentName: Leg_R.001
-      position: {x: 2.1100276e-11, y: 0.0033449524, z: 0}
-      rotation: {x: 0.51588964, y: 0.00004458233, z: 0.024710804, w: 0.85629857}
-      scale: {x: 1, y: 1.0000001, z: 1}
-    - name: Toes_R
-      parentName: Foot_R
-      position: {x: 5.937181e-11, y: 0.0011512495, z: 5.5879353e-11}
-      rotation: {x: 0.19278385, y: 0.000000001311065, z: 0.013403022, w: 0.98114973}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: Toes_R_end
-      parentName: Toes_R
-      position: {x: -0, y: 0.0005731343, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Body
+      parentName: CharacterCustomDDUTest7(Clone)
+      position: {x: -0, y: -0.000000059604645, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 90, y: 90, z: 90}
+    - name: Face
       parentName: CharacterCustomDDUTest7(Clone)
       position: {x: -0, y: -0.000000059604645, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
@@ -610,11 +615,6 @@ ModelImporter:
     - name: Hair.008
       parentName: CharacterCustomDDUTest7(Clone)
       position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-      scale: {x: 90, y: 90, z: 90}
-    - name: Face
-      parentName: CharacterCustomDDUTest7(Clone)
-      position: {x: -0, y: -0.000000059604645, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
       scale: {x: 90, y: 90, z: 90}
     armTwist: 0.5
