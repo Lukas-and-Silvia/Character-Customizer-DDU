@@ -15,13 +15,15 @@ public class AnimationStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        bool IsWalking = animator.GetBool("IsWalking");
+        bool wPressed = Input.GetKey(KeyCode.W);
+        if (!IsWalking && wPressed)
         {
             animator.SetBool("IsWalking", true);
             Debug.Log("IsWalking is true");
         }
 
-        if (!Input.GetKey(KeyCode.W))
+        if (IsWalking && !wPressed)
         {
             animator.SetBool("IsWalking", false);
             Debug.Log("IsWalking is false");
