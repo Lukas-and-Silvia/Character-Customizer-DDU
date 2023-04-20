@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class MenuScript : MonoBehaviour
 {
     public GameObject[] menus;
+    public GameObject[] mainMenus;
     public Color[] hairColors;
     private List<GameObject> colorButtons;
     private List<int> colorIds;
@@ -14,6 +15,9 @@ public class MenuScript : MonoBehaviour
     public GameObject spawnLocation;
     public GameObject colorButtonPrefab;
     public GameObject playerModel;
+    public GameObject checkmark;
+
+    private bool toggleCustom = true;
 
     public Vector3 amount;
 
@@ -68,7 +72,45 @@ public class MenuScript : MonoBehaviour
         {
             playerModel.transform.Rotate(-amount);
         }
+    }
 
-        
+    public void StartCustom(GameObject sender)
+    {
+        characterCustom.GetComponent<CharacterCustomiser>().Randomise();
+
+        if (toggleCustom)
+        {
+            foreach (GameObject g in mainMenus)
+            {
+                if (g == sender)
+                {
+                    g.SetActive(false);
+                    continue;
+                }
+                g.SetActive(true);
+            }
+        }
+        else
+        {
+
+        }
+    }
+
+    public void ToggleCustom()
+    {
+        toggleCustom = !toggleCustom;
+        if (toggleCustom)
+        {
+            checkmark.SetActive(true);
+        }
+        else
+        {
+            checkmark.SetActive(false);
+        }
+    }
+
+    public Color RandomHairColor()
+    {
+        return (hairColors[Random.Range(0, hairColors.Length)]);
     }
 }

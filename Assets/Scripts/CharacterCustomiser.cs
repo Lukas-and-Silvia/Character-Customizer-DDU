@@ -5,6 +5,8 @@ using UnityEngine.Sprites;
 
 public class CharacterCustomiser : MonoBehaviour
 {
+    public GameObject menuScript;
+
     public Material[] playerMats;
     public GameObject[] hair;
     public Texture2D[] faces;
@@ -15,9 +17,9 @@ public class CharacterCustomiser : MonoBehaviour
     int PrimaryHair = 0;
     int SecondaryHair = 0;
 
-    private void Start()
+    public void Randomise()
     {
-        playerMats[0].color = Color.black;
+        playerMats[0].color = menuScript.GetComponent<MenuScript>().RandomHairColor();
         ChangePrimaryHair(Random.Range(0, hair.Length));
         playerMats[1].SetTexture("_DecalTex", faces[Random.Range(0, faces.Length)]);
         playerMats[2].SetTexture("_DecalTex", shirts[Random.Range(0, shirts.Length)]);
