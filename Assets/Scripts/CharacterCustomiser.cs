@@ -79,7 +79,7 @@ public class CharacterCustomiser : MonoBehaviour
 
     public void ChangeSkin(int SkinId)
     {
-        for (int i = 0; i < playerMats.Length; i++)
+        for (int i = 1; i < playerMats.Length; i++)
         {
             playerMats[i].SetTexture("_MainTex", skinColor[SkinId]);
         }
