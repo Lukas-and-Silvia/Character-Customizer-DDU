@@ -8,22 +8,28 @@ public class MenuScript : MonoBehaviour
     public GameObject[] menus;
     public Color[] hairColors;
     private List<GameObject> colorButtons;
+    private List<int> colorIds;
 
     public GameObject characterCustom;
     public GameObject spawnLocation;
     public GameObject colorButtonPrefab;
+    public GameObject playerModel;
+
+    public Vector3 amount;
 
     private void Start()
     {
         colorButtons = new List<GameObject>();
+        colorIds = new List<int>();
 
         for (int i = 0; i < hairColors.Length; i++)
         {
-            GameObject g = new GameObject();
-            g = Instantiate(colorButtonPrefab, spawnLocation.transform);
-            g.GetComponent<Image>().color = hairColors[i];
-            g.GetComponent<Button>().onClick.AddListener(() => ButtonClickEvent(g));
-            colorButtons.Add(g);
+            int n = new int();
+            n = i;
+            colorIds.Add(n);
+            colorButtons.Add(Instantiate(colorButtonPrefab, spawnLocation.transform));
+            colorButtons[i].GetComponent<Image>().color = hairColors[i];
+            colorButtons[i].GetComponent<Button>().onClick.AddListener(() => ButtonClickEvent(colorButtons[n]));
         }
     }
 
@@ -50,5 +56,19 @@ public class MenuScript : MonoBehaviour
             menus[i].SetActive(false);
         }
         OpenMenu.SetActive(true);
+    }
+
+    public void TurnPlayer(bool rotation)
+    {
+        if (rotation)
+        {
+            playerModel.transform.Rotate(amount);
+        }
+        else
+        {
+            playerModel.transform.Rotate(-amount);
+        }
+
+        
     }
 }
