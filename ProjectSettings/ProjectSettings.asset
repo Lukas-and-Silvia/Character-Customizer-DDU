@@ -805,7 +805,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: TEXTURE_GRAPH;POSEIDON;JUPITER;GRIFFIN;GRIFFIN_2021;TG_SEARCHER
+    Standalone: TEXTURE_GRAPH;POSEIDON;JUPITER;GRIFFIN;GRIFFIN_2021;TG_SEARCHER;POSEIDON_URP
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
@@ -894,7 +894,7 @@ PlayerSettings:
     m_VersionCode: 1
     m_VersionName: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 0
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0

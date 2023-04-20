@@ -16,6 +16,7 @@ public class MenuScript : MonoBehaviour
     public GameObject colorButtonPrefab;
     public GameObject playerModel;
     public GameObject checkmark;
+    public GameObject sceneManager;
 
     private bool toggleCustom = true;
 
@@ -92,7 +93,7 @@ public class MenuScript : MonoBehaviour
         }
         else
         {
-
+            sceneManager.GetComponent<SceneController>().SwitchScene();
         }
     }
 
