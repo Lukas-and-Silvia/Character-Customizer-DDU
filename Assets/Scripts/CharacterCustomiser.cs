@@ -14,8 +14,8 @@ public class CharacterCustomiser : MonoBehaviour
     public Texture2D[] pants;
     public Texture2D[] skinColor;
 
-    int PrimaryHair = 0;
-    int SecondaryHair = 0;
+    public static int PrimaryHair = 0;
+    public static int SecondaryHair = 0;
 
     public void Randomise()
     {
