@@ -42,7 +42,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
-*.mat
+
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -63,6 +63,4 @@ Assets\Materials\TorsoMat.mat
 Assets\Materials\HeadMat.mat
 Assets\Materials\HairMat.mat
 Assets\Materials\LegsMat.mat
-*.mat
-Assets/Materials/HairMat.mat
-Assets/Materials/HeadMat.mat
+
