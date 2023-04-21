@@ -19,13 +19,13 @@ public class AnimationStateController : MonoBehaviour
         if (Input.GetKey("w"))
         {
             animator.SetBool("IsWalking", true);
-            Debug.Log("IsWalking is true");
+          
         }
 
         if (!Input.GetKey("w"))
         {
             animator.SetBool("IsWalking", false);
-            Debug.Log("IsWalking is false");
+       
         }
     }
 }
