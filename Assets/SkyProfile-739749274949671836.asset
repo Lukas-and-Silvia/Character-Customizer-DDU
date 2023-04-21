@@ -67,7 +67,7 @@ MonoBehaviour:
   starsColor0: {r: 0, g: 0, b: 0, a: 0}
   starsColor1: {r: 0, g: 0, b: 0, a: 0}
   starsColor2: {r: 0, g: 0, b: 0, a: 0}
-  starsDensity0: 0
+  starsDensity0: 0.01
   starsDensity1: 0
   starsDensity2: 0
   starsSize0: 0.01
@@ -123,7 +123,7 @@ MonoBehaviour:
   overheadCloudCastShadow: 0
   overheadCloudShadowClipMask: 0
   enableDetailOverlay: 1
-  detailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
+  detailOverlayTintColor: {r: 1, g: 1, b: 1, a: 0}
   detailOverlayCubeMap: {fileID: 0}
   detailOverlayLayer: 0
   detailOverlayRotationSpeed: 0
@@ -207,7 +207,7 @@ Material:
     - _OverheadCloudRemapMin: 0
     - _OverheadCloudSize: 10
     - _OverheadCloudStep: 2
-    - _StarsDensity0: 0
+    - _StarsDensity0: 0.01
     - _StarsDensity1: 0
     - _StarsDensity2: 0
     - _StarsEndPosition: 0
@@ -227,7 +227,7 @@ Material:
     - _SunSize: 0.07
     - _SunSoftEdge: 0.5
     m_Colors:
-    - _DetailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
+    - _DetailOverlayTintColor: {r: 1, g: 1, b: 1, a: 0}
     - _FogColor: {r: 0, g: 0, b: 0, a: 0}
     - _GroundColor: {r: 0.4339623, g: 0.4339623, b: 0.4339623, a: 1}
     - _HorizonCloudColor: {r: 1, g: 1, b: 1, a: 1}
@@ -241,6 +241,6 @@ Material:
     - _StarsColor1: {r: 0, g: 0, b: 0, a: 0}
     - _StarsColor2: {r: 0, g: 0, b: 0, a: 0}
     - _SunColor: {r: 1, g: 0.9700814, b: 0.9009434, a: 1}
-    - _SunDirection: {r: -0.3213938, g: -0.76604444, b: 0.5566705, a: 0}
+    - _SunDirection: {r: -0.3783103, g: -0.8942323, b: -0.23922822, a: 0}
     - _SunLightColor: {r: 1, g: 0.9929226, b: 0.9009434, a: 1}
   m_BuildTextureStacks: []
