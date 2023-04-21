@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public void SwitchScene()
+    public void SwitchScene(string scene)
     {
-        SceneManager.LoadScene("Island");
+        SceneManager.LoadScene(scene);
     }
 
     public void ExitGame()

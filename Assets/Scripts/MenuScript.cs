@@ -75,25 +75,31 @@ public class MenuScript : MonoBehaviour
         }
     }
 
-    public void StartCustom(GameObject sender)
+    public void StartCustom(GameObject setActive)
     {
-        characterCustom.GetComponent<CharacterCustomiser>().Randomise();
-
         if (toggleCustom)
         {
             foreach (GameObject g in mainMenus)
             {
-                if (g == sender)
+                if (g == setActive)
                 {
-                    g.SetActive(false);
+                    g.SetActive(true);
                     continue;
                 }
-                g.SetActive(true);
+                g.SetActive(false);
             }
         }
         else
         {
-            sceneManager.GetComponent<SceneController>().SwitchScene();
+            for (int i = 0; i < mainMenus.Length; i++)
+            {
+                if (i == 2)
+                {
+                    mainMenus[i].SetActive(true);
+                    continue;
+                }
+                mainMenus[i].SetActive(false);
+            }
         }
     }
 
@@ -113,5 +119,32 @@ public class MenuScript : MonoBehaviour
     public Color RandomHairColor()
     {
         return (hairColors[Random.Range(0, hairColors.Length)]);
+    }
+
+    public void Back(GameObject sender)
+    {
+        if (toggleCustom)
+        {
+            for (int i = 0; i < mainMenus.Length; i++)
+            {
+                if (mainMenus[i] == sender)
+                {
+                    mainMenus[i - 1].SetActive(true);
+                }
+                mainMenus[i].SetActive(false);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < mainMenus.Length; i++)
+            {
+                if (i == 0)
+                {
+                    mainMenus[i].SetActive(true);
+                    continue;
+                }
+                mainMenus[i].SetActive(false);
+            }
+        }
     }
 }
