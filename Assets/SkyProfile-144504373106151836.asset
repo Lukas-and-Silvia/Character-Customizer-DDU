@@ -46,12 +46,12 @@ MonoBehaviour:
   enableSun: 1
   sunTexture: {fileID: 0}
   sunColor: {r: 1, g: 1, b: 1, a: 1}
-  sunSize: 0.07
+  sunSize: 0.1
   sunSoftEdge: 0.689
   sunGlow: 0.363
   useBakedSun: 0
   sunCubemap: {fileID: 0}
-  sunLightColor: {r: 0.16665184, g: 0.18437228, b: 0.3301887, a: 1}
+  sunLightColor: {r: 0.37123528, g: 0.42587262, b: 0.8301887, a: 1}
   sunLightIntensity: 1
   enableMoon: 0
   moonTexture: {fileID: 0}
@@ -185,7 +185,7 @@ Material:
     - _StarsTwinkle2: 0
     - _SunGlow: 0.363
     - _SunLightIntensity: 1
-    - _SunSize: 0.07
+    - _SunSize: 0.1
     - _SunSoftEdge: 0.689
     m_Colors:
     - _DetailOverlayTintColor: {r: 0, g: 0, b: 0, a: 0}
@@ -203,7 +203,7 @@ Material:
     - _StarsColor2: {r: 0, g: 0, b: 0, a: 0}
     - _SunColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunDirection: {r: -0.3213938, g: -0.76604444, b: 0.5566705, a: 0}
-    - _SunLightColor: {r: 0.16665184, g: 0.18437228, b: 0.3301887, a: 1}
+    - _SunLightColor: {r: 0.37123528, g: 0.42587262, b: 0.8301887, a: 1}
   m_BuildTextureStacks: []
 --- !u!21 &7449081302889067974
 Material:
