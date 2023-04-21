@@ -94,14 +94,14 @@ MonoBehaviour:
     showTerrainMask: 0
   wizardTools:
     lightingModel: 0
-    texturingModel: 0
+    texturingModel: 2
     splatsModel: 1
-    origin: {x: 0, y: -10, z: 0}
+    origin: {x: 0, y: 0, z: 0}
     tileSize: {x: 500, y: 500, z: 500}
     tileCountX: 1
     tileCountZ: 1
     groupId: 0
-    terrainNamePrefix: Terrain
+    terrainNamePrefix: TerrainWorld2
     dataDirectory: Assets/_TerrainData
     setShaderGroupId: -1
   renderPipelines:
