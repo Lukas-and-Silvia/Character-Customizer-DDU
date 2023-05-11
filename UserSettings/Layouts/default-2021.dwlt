@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 12291
+  controlID: 118
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 12204
+  controlID: 128
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 12136
+  controlID: 41
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,8 +296,8 @@ MonoBehaviour:
     y: 0
     width: 398.40002
     height: 730.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -655,9 +655,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 114.80373, y: 25.09882, z: 98.15658}
+    m_Target: {x: 146.242, y: 83.47633, z: 126.2642}
     speed: 2
-    m_Value: {x: 114.80373, y: 25.09882, z: 98.15658}
+    m_Value: {x: 146.242, y: 83.47633, z: 126.2642}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -704,13 +704,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.2784865, y: 0.27671242, z: 0.08416742, w: 0.9158723}
+    m_Target: {x: 0.34469903, y: 0.40377468, z: -0.16752586, w: 0.8307312}
     speed: 2
-    m_Value: {x: -0.27848223, y: 0.2767082, z: 0.08416614, w: 0.9158583}
+    m_Value: {x: 0.33970332, y: 0.40476644, z: -0.16509756, w: 0.8327717}
   m_Size:
-    m_Target: 0.41674188
+    m_Target: 175.09103
     speed: 2
-    m_Value: 0.39879605
+    m_Value: 175.09103
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -831,10 +831,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0e4efeff604efeff6852feffbe52feffc652feff8c79feffe079feffe87dfeff447efeff4c7efeff1a85feff56dbfeff0207ffffd05effff6a80ffff7c80ffff4881ffff2683ffff0e88ffffa49cffff0cfbffff0efbffff9e730000c4730000147400001e74000066740000a2740000da740000087500008675000088760000e876000030770000eab500001cd1000044f000000207010064260100382801005c2901006c2901002e8801001c8901008089010060ae0100eab50100beb601000cc30100bad701006cec010028010200503f02009c4c0200889b0200029e02002cb00200
+      scrollPos: {x: 0, y: 16.399994}
+      m_SelectedIDs: a47f0000
+      m_LastClickedID: 32676
+      m_ExpandedIDs: 0cfbffff507e0000207f0000407f0000a47f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -900,22 +900,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/StarterAssets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Materials
+  - Assets/StarterAssets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\lukas\OneDrive\Dokumenter\GitHub\Character-Customizer-DDU
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 567d0000
-    m_LastClickedID: 32086
-    m_ExpandedIDs: 00000000447d0000647d0000d672010004740100249b010000ca9a3b
+    m_SelectedIDs: d27d0000
+    m_LastClickedID: 32210
+    m_ExpandedIDs: 00000000a47d0000a67d0000a87d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -943,7 +943,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000447d000000ca9a3b
+    m_ExpandedIDs: 00000000a47d0000a67d0000a87d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -970,7 +970,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 00000000046b00008a920000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
